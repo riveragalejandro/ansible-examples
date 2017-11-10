@@ -1,0 +1,5 @@
+---
+- hosts: tag_Name_*
+
+  roles:
+    - { role: auth-keys, become: yes }
