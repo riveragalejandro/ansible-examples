@@ -7,11 +7,11 @@
 - name: Extract kafka 
   unarchive:
     src: "{{ kafka_url }}"
-    dest: "{{ kafka_path }}"
+    dest: /opt
     remote_src: yes
 
 - name: Run zookeeper
-  command: "{{ kafka_path }}/bin/zookeeper-server-start.sh /opt/kafka/config/zookeeper.properties"
+  command: /opt/kafka_2.11-1.0.0/bin/zookeeper-server-start.sh /opt/kafka_2.11-1.0.0/config/zookeeper.properties"
 
 - name: Run kafka
-  command: "{{ kafka_path }}/bin/kafka-server-start.sh /opt/kafka/config/server.properties"
+  command: /opt/kafka_2.11-1.0.0/bin/kafka-server-start.sh /opt/kafka_2.11-1.0.0/config/server.properties
