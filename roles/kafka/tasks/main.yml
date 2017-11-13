@@ -1,4 +1,9 @@
 ---
+- name: Create /opt dir
+  file:
+    src: /opt
+    state: directory
+
 - name: Extract kafka 
   unarchive:
     src: "{{ kafka_url }}"
