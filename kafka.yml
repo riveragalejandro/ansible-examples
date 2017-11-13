@@ -1,0 +1,5 @@
+---
+- hosts: tag_environment_dev
+
+  roles:
+    - { role: kafka, become: yes }
