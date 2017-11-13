@@ -11,7 +11,7 @@
     remote_src: yes
 
 - name: Run zookeeper
-  command: /opt/kafka_2.11-1.0.0/bin/zookeeper-server-start.sh /opt/kafka_2.11-1.0.0/config/zookeeper.properties"
+  command: "/opt/kafka_2.11-1.0.0/bin/zookeeper-server-start.sh /opt/kafka_2.11-1.0.0/config/zookeeper.properties"
 
 - name: Run kafka
-  command: /opt/kafka_2.11-1.0.0/bin/kafka-server-start.sh /opt/kafka_2.11-1.0.0/config/server.properties
+  command: "/opt/kafka_2.11-1.0.0/bin/kafka-server-start.sh /opt/kafka_2.11-1.0.0/config/server.properties"
