@@ -6,7 +6,7 @@
     remote_src: yes
 
 - name: Run zookeeper
-  command: "{{ kafka_path }}"/bin/zookeeper-server-start.sh /opt/kafka/config/zookeeper.properties
+  command: "{{ kafka_path }}/bin/zookeeper-server-start.sh /opt/kafka/config/zookeeper.properties"
 
 - name: Run kafka
-  command: "{{ kafka_path }}"/bin/kafka-server-start.sh /opt/kafka/config/server.properties
+  command: "{{ kafka_path }}/bin/kafka-server-start.sh /opt/kafka/config/server.properties"
